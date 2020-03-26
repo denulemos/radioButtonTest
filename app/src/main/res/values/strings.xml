@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dinamic Calculator</string>
+    <string name="txt_1">First Value</string>
+    <string name="txt_2">Second Value</string>
+    <string name="radio_1">Sum</string>
+    <string name="radio_2">Substract</string>
+    <string name="button">Calculate</string>
+    <string name="text_view">The result is</string>
+</resources>
