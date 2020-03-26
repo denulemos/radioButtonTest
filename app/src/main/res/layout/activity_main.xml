@@ -38,11 +38,11 @@
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="305dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="378dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_2">
 
@@ -59,18 +59,33 @@
             android:layout_height="wrap_content"
             android:text="@string/radio_2"
             android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_3"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_3"
+            android:textSize="24sp" />
+
     </RadioGroup>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:onClick="CalculateMethod"
         android:text="@string/button"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 

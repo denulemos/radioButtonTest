@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private EditText txt1;
     private EditText txt2;
     private TextView tw;
-    private RadioButton rd1, rd2;
+    private RadioButton rd1, rd2, rd3, rd4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         tw = (TextView)findViewById(R.id.text_view);
         rd1 = (RadioButton) findViewById(R.id.radio_1);
         rd2 = (RadioButton) findViewById(R.id.radio_2);
+        rd3 = (RadioButton) findViewById(R.id.radio_3);
+        rd4 = (RadioButton) findViewById(R.id.radio_4);
     }
 
     public void CalculateMethod (View view){
@@ -37,8 +40,20 @@ public class MainActivity extends AppCompatActivity {
         if (rd1.isChecked()){
            result = v1 + v2;
         }
-        else{
+        else if (rd2.isChecked()){
            result = v1 - v2;
+        }
+        else if (rd2.isChecked()){
+            result = v1 * v2;
+        }
+        else{
+            if (v2 == 0){
+                Toast toast = Toast.makeText(this, "You cant make this operation with zero", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            else{
+                result = v1 / v2;
+            }
         }
 
         String result_stg = String.valueOf(result);

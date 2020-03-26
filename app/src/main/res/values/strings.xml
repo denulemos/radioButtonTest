@@ -4,6 +4,8 @@
     <string name="txt_2">Second Value</string>
     <string name="radio_1">Sum</string>
     <string name="radio_2">Substract</string>
+    <string name="radio_3">Multiply</string>
+    <string name="radio_4">Divide</string>
     <string name="button">Calculate</string>
     <string name="text_view">The result is</string>
 </resources>
