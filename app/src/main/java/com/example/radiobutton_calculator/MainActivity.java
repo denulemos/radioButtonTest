@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText txt1;
     private EditText txt2;
     private TextView tw;
+    //Declaracion RadioButton
     private RadioButton rd1, rd2, rd3, rd4;
 
     @Override
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         int v1 = Integer.parseInt(v1_stg);
         int v2 = Integer.parseInt(v2_stg);
 
+        //Si el radioButton esta chequeado (IsChequed)
         if (rd1.isChecked()){
            result = v1 + v2;
         }
@@ -48,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             if (v2 == 0){
+                //Instanciar Toast
+                //Contexto, texto, duracion
                 Toast toast = Toast.makeText(this, "You cant make this operation with zero", Toast.LENGTH_SHORT);
+                //El .show() se puede poner al final de la instancia de arriba
                 toast.show();
             }
             else{
